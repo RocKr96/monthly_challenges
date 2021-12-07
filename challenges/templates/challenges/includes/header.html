@@ -1,0 +1,11 @@
+<header> 
+    <nav> 
+    {% if active_page == "index" %}
+        <h3>All Challenges</h3>
+    {% else %}
+        <a href="{% url 'index' %}">All Challenges</a>
+    {% endif %}
+        
+        {% comment %} <p> {{ active_page }}</p> {% endcomment %}
+    </nav>
+</header>
